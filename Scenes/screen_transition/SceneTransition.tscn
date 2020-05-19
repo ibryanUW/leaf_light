@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://brand_assets/B IMD 363 Leaf and Light logos final 1.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/screen_transition/SceneTransition.gd" type="Script" id=2]
+
+[node name="SceneChanger" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="LoadingScreenLogo" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeafLightLogo" type="TextureRect" parent="LoadingScreenLogo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 64.0
+margin_top = 96.0
+margin_right = -118.0
+margin_bottom = -322.0
+texture = ExtResource( 1 )
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+anchor_left = 2.8
+anchor_top = 0.5
+anchor_right = 2.8
+anchor_bottom = 0.5
+margin_left = -4960.0
+margin_top = 308.0
+margin_right = -3920.0
+margin_bottom = 468.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
