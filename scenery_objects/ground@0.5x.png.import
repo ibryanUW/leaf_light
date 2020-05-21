@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Loading_Bar_50_percent.png-d51d7730395f8768263fc316b0a40b4d.stex"
+path="res://.import/ground@0.5x.png-22c5b01ee78bdcc12ec9cfe955a7eb2a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://screen_assets/Loading_Bar_50_percent.png"
-dest_files=[ "res://.import/Loading_Bar_50_percent.png-d51d7730395f8768263fc316b0a40b4d.stex" ]
+source_file="res://scenery_objects/ground@0.5x.png"
+dest_files=[ "res://.import/ground@0.5x.png-22c5b01ee78bdcc12ec9cfe955a7eb2a.stex" ]
 
 [params]
 
