@@ -23,7 +23,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 5, 5.1, 10 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 920, 210 ), Vector2( 250, 210 ), Vector2( 1800, 210 ), Vector2( 300, 350 ) ]
+"values": [ Vector2( 840.282, 80 ), Vector2( 250, 210 ), Vector2( 1800, 210 ), Vector2( 300, 350 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("AnimationPlayer/clouds5:rect_position")
@@ -35,7 +35,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 5, 5.1, 10 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1250, 155 ), Vector2( 120, 155 ), Vector2( 1250, 155 ), Vector2( 120, 155 ) ]
+"values": [ Vector2( 215.945, 80 ), Vector2( 120, 155 ), Vector2( 1250, 155 ), Vector2( 120, 155 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("AnimationPlayer/clouds3:rect_position")
@@ -47,7 +47,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 5, 5.1, 10 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1310, 155 ), Vector2( 200, 155 ), Vector2( 1310, 155 ), Vector2( 200, 155 ) ]
+"values": [ Vector2( 1320.25, -67.6393 ), Vector2( 200, 155 ), Vector2( 1310, 155 ), Vector2( 200, 155 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("AnimationPlayer/clouds6:rect_position")
@@ -59,7 +59,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 5, 5.1, 10 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1070, 250 ), Vector2( 120, 250 ), Vector2( 1070, 250 ), Vector2( 240, 250 ) ]
+"values": [ Vector2( 1287.36, 290 ), Vector2( 120, 0 ), Vector2( 1070, 250 ), Vector2( 240, 250 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("AnimationPlayer/clouds4:rect_position")
@@ -71,7 +71,7 @@ tracks/4/keys = {
 "times": PoolRealArray( 0, 5, 5.1, 10 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1140, 250 ), Vector2( 120, 250 ), Vector2( 1140, 250 ), Vector2( 300, 250 ) ]
+"values": [ Vector2( 215.945, 80 ), Vector2( 120, 200 ), Vector2( 1140, 250 ), Vector2( 300, 250 ) ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("AnimationPlayer/clouds:visible")
@@ -203,10 +203,10 @@ playback_speed = 0.3
 anims/menu_clouds = SubResource( 1 )
 
 [node name="clouds" type="TextureRect" parent="HBoxContainer/CenterContainer/AnimationPlayer"]
-margin_left = 920.0
-margin_top = 210.0
-margin_right = 1434.0
-margin_bottom = 399.0
+margin_left = 840.282
+margin_top = 80.0
+margin_right = 1354.28
+margin_bottom = 269.0
 rect_clip_content = true
 texture = ExtResource( 7 )
 stretch_mode = 6
@@ -215,10 +215,10 @@ __meta__ = {
 }
 
 [node name="clouds3" type="TextureRect" parent="HBoxContainer/CenterContainer/AnimationPlayer"]
-margin_left = 1310.0
-margin_top = 155.0
-margin_right = 1885.0
-margin_bottom = 430.0
+margin_left = 1320.25
+margin_top = -67.6393
+margin_right = 1895.25
+margin_bottom = 207.361
 texture = ExtResource( 8 )
 stretch_mode = 6
 __meta__ = {
@@ -226,10 +226,10 @@ __meta__ = {
 }
 
 [node name="clouds5" type="TextureRect" parent="HBoxContainer/CenterContainer/AnimationPlayer"]
-margin_left = 1250.0
-margin_top = 155.0
-margin_right = 1825.0
-margin_bottom = 430.0
+margin_left = 215.945
+margin_top = 80.0
+margin_right = 790.945
+margin_bottom = 355.0
 texture = ExtResource( 8 )
 stretch_mode = 6
 __meta__ = {
@@ -237,10 +237,10 @@ __meta__ = {
 }
 
 [node name="clouds4" type="TextureRect" parent="HBoxContainer/CenterContainer/AnimationPlayer"]
-margin_left = 1140.0
-margin_top = 250.0
-margin_right = 1654.0
-margin_bottom = 439.0
+margin_left = 215.945
+margin_top = 80.0
+margin_right = 729.946
+margin_bottom = 269.0
 texture = ExtResource( 4 )
 stretch_mode = 6
 __meta__ = {
@@ -248,10 +248,10 @@ __meta__ = {
 }
 
 [node name="clouds6" type="TextureRect" parent="HBoxContainer/CenterContainer/AnimationPlayer"]
-margin_left = 1070.0
-margin_top = 250.0
-margin_right = 1584.0
-margin_bottom = 439.0
+margin_left = 1287.36
+margin_top = 290.0
+margin_right = 1801.36
+margin_bottom = 479.0
 texture = ExtResource( 4 )
 stretch_mode = 6
 __meta__ = {
