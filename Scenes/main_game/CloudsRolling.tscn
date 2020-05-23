@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/main_game/CloudsRolling.gd" type="Script" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "clouds_rolling_animation"
+length = 60.0
+loop = true
+
+[node name="AnimationPlayer" type="AnimationPlayer"]
+autoplay = "clouds_rolling_animation"
+playback_process_mode = 0
+anims/clouds_rolling_animation = SubResource( 1 )
+next/clouds_rolling_animation = "clouds_rolling_animation"
+script = ExtResource( 5 )
+
+[node name="cloud_1" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

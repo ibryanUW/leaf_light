@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://scenery_objects/ground@0.5x.png" type="Texture" id=1]
+[ext_resource path="res://scenery_objects/ground@2x.png" type="Texture" id=1]
 [ext_resource path="res://tree_sprites/B IMD 363 Leaf and Light tree 1.png" type="Texture" id=2]
 [ext_resource path="res://scenery_objects/B IMD 363 Leaf and Light enemy tree 1.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/main_game/NewGameScene.gd" type="Script" id=4]
@@ -12,7 +12,7 @@ extents = Vector2( 31.9999, 48.0001 )
 script = ExtResource( 4 )
 
 [node name="PlayerCharacter" type="KinematicBody2D" parent="."]
-position = Vector2( 960, 944 )
+position = Vector2( 960, 912 )
 
 [node name="Player" type="Sprite" parent="PlayerCharacter"]
 scale = Vector2( 0.267903, 0.214621 )
@@ -23,7 +23,7 @@ position = Vector2( 6.10352e-05, 6.10352e-05 )
 shape = SubResource( 1 )
 
 [node name="NonPlayerCharacterLeft" type="KinematicBody2D" parent="."]
-position = Vector2( 384, 976 )
+position = Vector2( 384, 928 )
 
 [node name="NPCLeft" type="Sprite" parent="NonPlayerCharacterLeft"]
 scale = Vector2( 0.267903, 0.214621 )
@@ -34,7 +34,7 @@ position = Vector2( 6.10352e-05, 6.10352e-05 )
 shape = SubResource( 1 )
 
 [node name="NonPlayerCharacterRight" type="KinematicBody2D" parent="."]
-position = Vector2( 1408, 976 )
+position = Vector2( 1408, 928 )
 
 [node name="NPCRight" type="Sprite" parent="NonPlayerCharacterRight"]
 scale = Vector2( 0.267903, 0.214621 )
@@ -50,1147 +50,180 @@ limit_left = 0
 limit_top = 0
 
 [node name="GridContainer" type="GridContainer" parent="."]
-margin_top = 1000.0
-margin_right = 1920.0
-margin_bottom = 1060.0
-columns = 60
+margin_top = 962.0
+margin_right = 1927.0
+margin_bottom = 1080.0
+custom_constants/hseparation = -8
+columns = 19
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect" type="TextureRect" parent="GridContainer"]
-margin_right = 28.0
-margin_bottom = 30.0
+margin_right = 109.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect2" type="TextureRect" parent="GridContainer"]
-margin_left = 32.0
-margin_right = 60.0
-margin_bottom = 30.0
+margin_left = 101.0
+margin_right = 210.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect3" type="TextureRect" parent="GridContainer"]
-margin_left = 64.0
-margin_right = 92.0
-margin_bottom = 30.0
+margin_left = 202.0
+margin_right = 311.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect4" type="TextureRect" parent="GridContainer"]
-margin_left = 96.0
-margin_right = 124.0
-margin_bottom = 30.0
+margin_left = 303.0
+margin_right = 412.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect5" type="TextureRect" parent="GridContainer"]
-margin_left = 128.0
-margin_right = 156.0
-margin_bottom = 30.0
+margin_left = 404.0
+margin_right = 513.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect6" type="TextureRect" parent="GridContainer"]
-margin_left = 160.0
-margin_right = 188.0
-margin_bottom = 30.0
+margin_left = 505.0
+margin_right = 614.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect7" type="TextureRect" parent="GridContainer"]
-margin_left = 192.0
-margin_right = 220.0
-margin_bottom = 30.0
+margin_left = 606.0
+margin_right = 715.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect8" type="TextureRect" parent="GridContainer"]
-margin_left = 224.0
-margin_right = 252.0
-margin_bottom = 30.0
+margin_left = 707.0
+margin_right = 816.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect9" type="TextureRect" parent="GridContainer"]
-margin_left = 256.0
-margin_right = 284.0
-margin_bottom = 30.0
+margin_left = 808.0
+margin_right = 917.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect10" type="TextureRect" parent="GridContainer"]
-margin_left = 288.0
-margin_right = 316.0
-margin_bottom = 30.0
+margin_left = 909.0
+margin_right = 1018.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect11" type="TextureRect" parent="GridContainer"]
-margin_left = 320.0
-margin_right = 348.0
-margin_bottom = 30.0
+margin_left = 1010.0
+margin_right = 1119.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect12" type="TextureRect" parent="GridContainer"]
-margin_left = 352.0
-margin_right = 380.0
-margin_bottom = 30.0
+margin_left = 1111.0
+margin_right = 1220.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect13" type="TextureRect" parent="GridContainer"]
-margin_left = 384.0
-margin_right = 412.0
-margin_bottom = 30.0
+margin_left = 1212.0
+margin_right = 1321.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect14" type="TextureRect" parent="GridContainer"]
-margin_left = 416.0
-margin_right = 444.0
-margin_bottom = 30.0
+margin_left = 1313.0
+margin_right = 1422.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect15" type="TextureRect" parent="GridContainer"]
-margin_left = 448.0
-margin_right = 476.0
-margin_bottom = 30.0
+margin_left = 1414.0
+margin_right = 1523.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect16" type="TextureRect" parent="GridContainer"]
-margin_left = 480.0
-margin_right = 508.0
-margin_bottom = 30.0
+margin_left = 1515.0
+margin_right = 1624.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect17" type="TextureRect" parent="GridContainer"]
-margin_left = 512.0
-margin_right = 540.0
-margin_bottom = 30.0
+margin_left = 1616.0
+margin_right = 1725.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect18" type="TextureRect" parent="GridContainer"]
-margin_left = 544.0
-margin_right = 572.0
-margin_bottom = 30.0
+margin_left = 1717.0
+margin_right = 1826.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect19" type="TextureRect" parent="GridContainer"]
-margin_left = 576.0
-margin_right = 604.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect20" type="TextureRect" parent="GridContainer"]
-margin_left = 608.0
-margin_right = 636.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect21" type="TextureRect" parent="GridContainer"]
-margin_left = 640.0
-margin_right = 668.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect22" type="TextureRect" parent="GridContainer"]
-margin_left = 672.0
-margin_right = 700.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect23" type="TextureRect" parent="GridContainer"]
-margin_left = 704.0
-margin_right = 732.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect24" type="TextureRect" parent="GridContainer"]
-margin_left = 736.0
-margin_right = 764.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect25" type="TextureRect" parent="GridContainer"]
-margin_left = 768.0
-margin_right = 796.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect26" type="TextureRect" parent="GridContainer"]
-margin_left = 800.0
-margin_right = 828.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect27" type="TextureRect" parent="GridContainer"]
-margin_left = 832.0
-margin_right = 860.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect28" type="TextureRect" parent="GridContainer"]
-margin_left = 864.0
-margin_right = 892.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect29" type="TextureRect" parent="GridContainer"]
-margin_left = 896.0
-margin_right = 924.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect30" type="TextureRect" parent="GridContainer"]
-margin_left = 928.0
-margin_right = 956.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect31" type="TextureRect" parent="GridContainer"]
-margin_left = 960.0
-margin_right = 988.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect32" type="TextureRect" parent="GridContainer"]
-margin_left = 992.0
-margin_right = 1020.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect33" type="TextureRect" parent="GridContainer"]
-margin_left = 1024.0
-margin_right = 1052.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect34" type="TextureRect" parent="GridContainer"]
-margin_left = 1056.0
-margin_right = 1084.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect35" type="TextureRect" parent="GridContainer"]
-margin_left = 1088.0
-margin_right = 1116.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect36" type="TextureRect" parent="GridContainer"]
-margin_left = 1120.0
-margin_right = 1148.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect37" type="TextureRect" parent="GridContainer"]
-margin_left = 1152.0
-margin_right = 1180.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect38" type="TextureRect" parent="GridContainer"]
-margin_left = 1184.0
-margin_right = 1212.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect39" type="TextureRect" parent="GridContainer"]
-margin_left = 1216.0
-margin_right = 1244.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect40" type="TextureRect" parent="GridContainer"]
-margin_left = 1248.0
-margin_right = 1276.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect41" type="TextureRect" parent="GridContainer"]
-margin_left = 1280.0
-margin_right = 1308.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect42" type="TextureRect" parent="GridContainer"]
-margin_left = 1312.0
-margin_right = 1340.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect43" type="TextureRect" parent="GridContainer"]
-margin_left = 1344.0
-margin_right = 1372.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect44" type="TextureRect" parent="GridContainer"]
-margin_left = 1376.0
-margin_right = 1404.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect45" type="TextureRect" parent="GridContainer"]
-margin_left = 1408.0
-margin_right = 1436.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect46" type="TextureRect" parent="GridContainer"]
-margin_left = 1440.0
-margin_right = 1468.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect47" type="TextureRect" parent="GridContainer"]
-margin_left = 1472.0
-margin_right = 1500.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect48" type="TextureRect" parent="GridContainer"]
-margin_left = 1504.0
-margin_right = 1532.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect49" type="TextureRect" parent="GridContainer"]
-margin_left = 1536.0
-margin_right = 1564.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect50" type="TextureRect" parent="GridContainer"]
-margin_left = 1568.0
-margin_right = 1596.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect51" type="TextureRect" parent="GridContainer"]
-margin_left = 1600.0
-margin_right = 1628.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect52" type="TextureRect" parent="GridContainer"]
-margin_left = 1632.0
-margin_right = 1660.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect53" type="TextureRect" parent="GridContainer"]
-margin_left = 1664.0
-margin_right = 1692.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect54" type="TextureRect" parent="GridContainer"]
-margin_left = 1696.0
-margin_right = 1724.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect55" type="TextureRect" parent="GridContainer"]
-margin_left = 1728.0
-margin_right = 1756.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect56" type="TextureRect" parent="GridContainer"]
-margin_left = 1760.0
-margin_right = 1788.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect57" type="TextureRect" parent="GridContainer"]
-margin_left = 1792.0
-margin_right = 1820.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect58" type="TextureRect" parent="GridContainer"]
-margin_left = 1824.0
-margin_right = 1852.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect59" type="TextureRect" parent="GridContainer"]
-margin_left = 1856.0
-margin_right = 1884.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect60" type="TextureRect" parent="GridContainer"]
-margin_left = 1888.0
-margin_right = 1916.0
-margin_bottom = 30.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect61" type="TextureRect" parent="GridContainer"]
-margin_top = 34.0
-margin_right = 28.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect62" type="TextureRect" parent="GridContainer"]
-margin_left = 32.0
-margin_top = 34.0
-margin_right = 60.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect63" type="TextureRect" parent="GridContainer"]
-margin_left = 64.0
-margin_top = 34.0
-margin_right = 92.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect64" type="TextureRect" parent="GridContainer"]
-margin_left = 96.0
-margin_top = 34.0
-margin_right = 124.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect65" type="TextureRect" parent="GridContainer"]
-margin_left = 128.0
-margin_top = 34.0
-margin_right = 156.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect66" type="TextureRect" parent="GridContainer"]
-margin_left = 160.0
-margin_top = 34.0
-margin_right = 188.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect67" type="TextureRect" parent="GridContainer"]
-margin_left = 192.0
-margin_top = 34.0
-margin_right = 220.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect68" type="TextureRect" parent="GridContainer"]
-margin_left = 224.0
-margin_top = 34.0
-margin_right = 252.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect69" type="TextureRect" parent="GridContainer"]
-margin_left = 256.0
-margin_top = 34.0
-margin_right = 284.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect70" type="TextureRect" parent="GridContainer"]
-margin_left = 288.0
-margin_top = 34.0
-margin_right = 316.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect71" type="TextureRect" parent="GridContainer"]
-margin_left = 320.0
-margin_top = 34.0
-margin_right = 348.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect72" type="TextureRect" parent="GridContainer"]
-margin_left = 352.0
-margin_top = 34.0
-margin_right = 380.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect73" type="TextureRect" parent="GridContainer"]
-margin_left = 384.0
-margin_top = 34.0
-margin_right = 412.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect74" type="TextureRect" parent="GridContainer"]
-margin_left = 416.0
-margin_top = 34.0
-margin_right = 444.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect75" type="TextureRect" parent="GridContainer"]
-margin_left = 448.0
-margin_top = 34.0
-margin_right = 476.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect76" type="TextureRect" parent="GridContainer"]
-margin_left = 480.0
-margin_top = 34.0
-margin_right = 508.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect77" type="TextureRect" parent="GridContainer"]
-margin_left = 512.0
-margin_top = 34.0
-margin_right = 540.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect78" type="TextureRect" parent="GridContainer"]
-margin_left = 544.0
-margin_top = 34.0
-margin_right = 572.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect79" type="TextureRect" parent="GridContainer"]
-margin_left = 576.0
-margin_top = 34.0
-margin_right = 604.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect80" type="TextureRect" parent="GridContainer"]
-margin_left = 608.0
-margin_top = 34.0
-margin_right = 636.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect81" type="TextureRect" parent="GridContainer"]
-margin_left = 640.0
-margin_top = 34.0
-margin_right = 668.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect82" type="TextureRect" parent="GridContainer"]
-margin_left = 672.0
-margin_top = 34.0
-margin_right = 700.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect83" type="TextureRect" parent="GridContainer"]
-margin_left = 704.0
-margin_top = 34.0
-margin_right = 732.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect84" type="TextureRect" parent="GridContainer"]
-margin_left = 736.0
-margin_top = 34.0
-margin_right = 764.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect85" type="TextureRect" parent="GridContainer"]
-margin_left = 768.0
-margin_top = 34.0
-margin_right = 796.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect86" type="TextureRect" parent="GridContainer"]
-margin_left = 800.0
-margin_top = 34.0
-margin_right = 828.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect87" type="TextureRect" parent="GridContainer"]
-margin_left = 832.0
-margin_top = 34.0
-margin_right = 860.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect88" type="TextureRect" parent="GridContainer"]
-margin_left = 864.0
-margin_top = 34.0
-margin_right = 892.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect89" type="TextureRect" parent="GridContainer"]
-margin_left = 896.0
-margin_top = 34.0
-margin_right = 924.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect90" type="TextureRect" parent="GridContainer"]
-margin_left = 928.0
-margin_top = 34.0
-margin_right = 956.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect91" type="TextureRect" parent="GridContainer"]
-margin_left = 960.0
-margin_top = 34.0
-margin_right = 988.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect92" type="TextureRect" parent="GridContainer"]
-margin_left = 992.0
-margin_top = 34.0
-margin_right = 1020.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect93" type="TextureRect" parent="GridContainer"]
-margin_left = 1024.0
-margin_top = 34.0
-margin_right = 1052.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect94" type="TextureRect" parent="GridContainer"]
-margin_left = 1056.0
-margin_top = 34.0
-margin_right = 1084.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect95" type="TextureRect" parent="GridContainer"]
-margin_left = 1088.0
-margin_top = 34.0
-margin_right = 1116.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect96" type="TextureRect" parent="GridContainer"]
-margin_left = 1120.0
-margin_top = 34.0
-margin_right = 1148.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect97" type="TextureRect" parent="GridContainer"]
-margin_left = 1152.0
-margin_top = 34.0
-margin_right = 1180.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect98" type="TextureRect" parent="GridContainer"]
-margin_left = 1184.0
-margin_top = 34.0
-margin_right = 1212.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect99" type="TextureRect" parent="GridContainer"]
-margin_left = 1216.0
-margin_top = 34.0
-margin_right = 1244.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect100" type="TextureRect" parent="GridContainer"]
-margin_left = 1248.0
-margin_top = 34.0
-margin_right = 1276.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect101" type="TextureRect" parent="GridContainer"]
-margin_left = 1280.0
-margin_top = 34.0
-margin_right = 1308.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect102" type="TextureRect" parent="GridContainer"]
-margin_left = 1312.0
-margin_top = 34.0
-margin_right = 1340.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect103" type="TextureRect" parent="GridContainer"]
-margin_left = 1344.0
-margin_top = 34.0
-margin_right = 1372.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect104" type="TextureRect" parent="GridContainer"]
-margin_left = 1376.0
-margin_top = 34.0
-margin_right = 1404.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect105" type="TextureRect" parent="GridContainer"]
-margin_left = 1408.0
-margin_top = 34.0
-margin_right = 1436.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect106" type="TextureRect" parent="GridContainer"]
-margin_left = 1440.0
-margin_top = 34.0
-margin_right = 1468.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect107" type="TextureRect" parent="GridContainer"]
-margin_left = 1472.0
-margin_top = 34.0
-margin_right = 1500.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect108" type="TextureRect" parent="GridContainer"]
-margin_left = 1504.0
-margin_top = 34.0
-margin_right = 1532.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect109" type="TextureRect" parent="GridContainer"]
-margin_left = 1536.0
-margin_top = 34.0
-margin_right = 1564.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect110" type="TextureRect" parent="GridContainer"]
-margin_left = 1568.0
-margin_top = 34.0
-margin_right = 1596.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect111" type="TextureRect" parent="GridContainer"]
-margin_left = 1600.0
-margin_top = 34.0
-margin_right = 1628.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect112" type="TextureRect" parent="GridContainer"]
-margin_left = 1632.0
-margin_top = 34.0
-margin_right = 1660.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect113" type="TextureRect" parent="GridContainer"]
-margin_left = 1664.0
-margin_top = 34.0
-margin_right = 1692.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect114" type="TextureRect" parent="GridContainer"]
-margin_left = 1696.0
-margin_top = 34.0
-margin_right = 1724.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect115" type="TextureRect" parent="GridContainer"]
-margin_left = 1728.0
-margin_top = 34.0
-margin_right = 1756.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect116" type="TextureRect" parent="GridContainer"]
-margin_left = 1760.0
-margin_top = 34.0
-margin_right = 1788.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect117" type="TextureRect" parent="GridContainer"]
-margin_left = 1792.0
-margin_top = 34.0
-margin_right = 1820.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect118" type="TextureRect" parent="GridContainer"]
-margin_left = 1824.0
-margin_top = 34.0
-margin_right = 1852.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect119" type="TextureRect" parent="GridContainer"]
-margin_left = 1856.0
-margin_top = 34.0
-margin_right = 1884.0
-margin_bottom = 64.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect120" type="TextureRect" parent="GridContainer"]
-margin_left = 1888.0
-margin_top = 34.0
-margin_right = 1916.0
-margin_bottom = 64.0
+margin_left = 1818.0
+margin_right = 1927.0
+margin_bottom = 118.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
