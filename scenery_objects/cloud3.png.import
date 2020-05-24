@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/B IMD 363 Leaf and Light cloud 4.png-eac006d8ad9fec7578fc27504c88e339.stex"
+path="res://.import/cloud3.png-cadccb156d96e6d4ad57530c530ef00d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenery_objects/B IMD 363 Leaf and Light cloud 4.png"
-dest_files=[ "res://.import/B IMD 363 Leaf and Light cloud 4.png-eac006d8ad9fec7578fc27504c88e339.stex" ]
+source_file="res://scenery_objects/cloud3.png"
+dest_files=[ "res://.import/cloud3.png-cadccb156d96e6d4ad57530c530ef00d.stex" ]
 
 [params]
 
