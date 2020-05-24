@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/B IMD 363 Leaf and Light sunlight 2.png-e13430e5256aa05fdb8a95214d20cba8.stex"
+path="res://.import/tree_1.png-8a23444b3e22fec8605581c0228a0adb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenery_objects/B IMD 363 Leaf and Light sunlight 2.png"
-dest_files=[ "res://.import/B IMD 363 Leaf and Light sunlight 2.png-e13430e5256aa05fdb8a95214d20cba8.stex" ]
+source_file="res://tree_sprites/tree_1.png"
+dest_files=[ "res://.import/tree_1.png-8a23444b3e22fec8605581c0228a0adb.stex" ]
 
 [params]
 

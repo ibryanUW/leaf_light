@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/B IMD 363 Leaf and Light tree 3.png-5acffdfdd96713b0ae12f884ff00a6df.stex"
+path="res://.import/tree_4_w_leaves.png-90314d0e3152e2667c2d80658e097222.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tree_sprites/B IMD 363 Leaf and Light tree 3.png"
-dest_files=[ "res://.import/B IMD 363 Leaf and Light tree 3.png-5acffdfdd96713b0ae12f884ff00a6df.stex" ]
+source_file="res://tree_sprites/tree_4_w_leaves.png"
+dest_files=[ "res://.import/tree_4_w_leaves.png-90314d0e3152e2667c2d80658e097222.stex" ]
 
 [params]
 
