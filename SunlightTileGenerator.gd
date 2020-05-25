@@ -24,6 +24,8 @@ func _ready():
 	var sun_spot_5 = make_some_sun()
 	sunlight_grid.add_child(sun_spot_5)
 
+# Custom function for getting a random value between 200 (far left) and
+# 1700 (far right )
 func set_sprite_pos_x():
 	return rand_range(200, 1700)
 	
