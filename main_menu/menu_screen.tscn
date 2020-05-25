@@ -70,10 +70,10 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="logo" type="TextureRect" parent="HBoxContainer/CenterContainer"]
-margin_left = 250.0
-margin_top = 170.0
-margin_right = 1050.0
-margin_bottom = 770.0
+margin_left = 387.0
+margin_top = 210.0
+margin_right = 987.0
+margin_bottom = 710.0
 rect_min_size = Vector2( 600, 500 )
 texture = ExtResource( 3 )
 stretch_mode = 6
