@@ -1,6 +1,5 @@
 extends Node
 
-
 var current_scene = null
 
 # Get current scene.
