@@ -6,13 +6,14 @@
 [ext_resource path="res://Scenes/main_game/CloudsRolling.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/main_game/PlayerCharacter.gd" type="Script" id=5]
 [ext_resource path="res://scenery_objects/B IMD 363 Leaf and Light sun.png" type="Texture" id=6]
-[ext_resource path="res://Scenes/main_game/Sunlight_Grid.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/main_game/NewGameScene.gd" type="Script" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 31.9999, 48.0001 )
 
 [node name="NewGameSetup" type="Node2D"]
 z_index = -5
+script = ExtResource( 8 )
 
 [node name="CloudsRollingOverhead" parent="." instance=ExtResource( 4 )]
 z_index = -4
@@ -276,5 +277,3 @@ texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Sunlight_Grid" parent="." instance=ExtResource( 7 )]

@@ -4,25 +4,7 @@
 
 extends Control
 
-onready var sunlight_grid = $"."
-
-func _ready():
-	print("making some sunlight happen yo")
-	
-	var sun_spot_1 = make_some_sun()
-	sunlight_grid.add_child(sun_spot_1)
-	
-	var sun_spot_2 = make_some_sun()
-	sunlight_grid.add_child(sun_spot_2)
-	
-	var sun_spot_3 = make_some_sun()
-	sunlight_grid.add_child(sun_spot_3)
-	
-	var sun_spot_4 = make_some_sun()
-	sunlight_grid.add_child(sun_spot_4)
-	
-	var sun_spot_5 = make_some_sun()
-	sunlight_grid.add_child(sun_spot_5)
+class_name SunlightTileGenerator
 
 # Custom function for getting a random value between 200 (far left) and
 # 1700 (far right )
@@ -48,3 +30,11 @@ func make_some_sun():
 	sun_spot.margin_top = set_sprite_pos_y()
 	
 	return sun_spot
+
+func generate_sunlight():
+	var light_control = $"."
+	print("making some sunlight happen yo")
+	for _i in range(5):
+		var temp_sun = make_some_sun()
+		light_control.add_child(temp_sun)
+	return light_control
