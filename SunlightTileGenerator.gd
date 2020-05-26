@@ -15,6 +15,9 @@ func set_sprite_pos_y():
 	return rand_range(300, 900)
 
 func make_some_sun():
+	var temp_margin_left = set_sprite_pos_x()
+	var temp_margin_top = set_sprite_pos_y()
+	
 	# Creating a new sun spot with a base of a TextureRect because it needs
 	# to load the sunlight beam texture into something.
 	var sun_spot = TextureRect.new()
@@ -24,10 +27,13 @@ func make_some_sun():
 	# and determine if they are touching.
 	var sun_spot_collision_shape = CollisionShape2D.new()
 	sun_spot_collision_shape.set_shape(RectangleShape2D)
-	sun_spot.add_child(sun_spot_collision_shape)
+	sun_spot_collision_shape.set_one_way_collision(false)
 	
-	sun_spot.margin_left = set_sprite_pos_x()
-	sun_spot.margin_top = set_sprite_pos_y()
+	
+	sun_spot.margin_left = temp_margin_left
+	sun_spot.margin_top = temp_margin_top
+	
+	sun_spot.add_child(sun_spot_collision_shape)
 	
 	return sun_spot
 
