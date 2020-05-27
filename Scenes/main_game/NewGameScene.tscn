@@ -350,7 +350,9 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
 text = "Hello!
  Welcome to Leaf & Light.
-To begin, start by clicking a sun beam to grow towards."
+To begin, start by clicking a sun beam to grow towards.
+
+Click in this area to close info box."
 align = 1
 valign = 1
 __meta__ = {
