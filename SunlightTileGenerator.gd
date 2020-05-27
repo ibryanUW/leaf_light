@@ -40,4 +40,3 @@ func generate_sunlight():
 	temp_collision_shape.set_shape(sun_spot_hit_box)
 	light_control.add_child(temp_collision_shape)
 	temp_collision_shape.set_position(Vector2(sun_spot.margin_left + 35, sun_spot.margin_top + 40))
-	

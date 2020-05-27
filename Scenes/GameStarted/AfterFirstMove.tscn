@@ -4,7 +4,6 @@
 [ext_resource path="res://tree_sprites/tree_1.png" type="Texture" id=2]
 [ext_resource path="res://scenery_objects/B IMD 363 Leaf and Light enemy tree 1.png" type="Texture" id=3]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 31.9999, 48.0001 )
 
