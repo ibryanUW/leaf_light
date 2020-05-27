@@ -16,6 +16,10 @@ func _input(event):
 			if($"Game_Start_Info_Label" != null):
 				$"Game_Start_Info_Label".queue_free()
 			sun_gen.free()
+			print(player_collision_info())
 			sun_gen = SunlightTileGenerator.new()
 			new_game_screen.add_child(sun_gen)
 
+func player_collision_info():
+	var player = $"PlayerCharacter"
+	player.get_collision_position()
