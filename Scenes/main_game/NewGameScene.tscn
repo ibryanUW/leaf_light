@@ -1,13 +1,15 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenery_objects/ground@2x.png" type="Texture" id=1]
 [ext_resource path="res://tree_sprites/tree_1.png" type="Texture" id=2]
 [ext_resource path="res://scenery_objects/B IMD 363 Leaf and Light enemy tree 1.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/main_game/CloudsRolling.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/main_game/PlayerCharacter.gd" type="Script" id=5]
+[ext_resource path="res://Scenes/main_game/main_player.gd" type="Script" id=5]
 [ext_resource path="res://scenery_objects/B IMD 363 Leaf and Light sun.png" type="Texture" id=6]
 [ext_resource path="res://fonts/montreal/Montreal-Bold.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Scenes/main_game/NewGameScene.gd" type="Script" id=8]
+[ext_resource path="res://Scenes/main_game/npc_right.gd" type="Script" id=9]
+[ext_resource path="res://Scenes/main_game/npc_left.gd" type="Script" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 size = 28
@@ -134,6 +136,7 @@ shape = SubResource( 2 )
 
 [node name="NonPlayerCharacterLeft" type="KinematicBody2D" parent="."]
 position = Vector2( 384, 928 )
+script = ExtResource( 10 )
 
 [node name="NPCLeft" type="Sprite" parent="NonPlayerCharacterLeft"]
 scale = Vector2( 0.267903, 0.214621 )
@@ -145,6 +148,7 @@ shape = SubResource( 2 )
 
 [node name="NonPlayerCharacterRight" type="KinematicBody2D" parent="."]
 position = Vector2( 1515, 928 )
+script = ExtResource( 9 )
 
 [node name="NPCRight" type="Sprite" parent="NonPlayerCharacterRight"]
 scale = Vector2( 0.267903, 0.214621 )

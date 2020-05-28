@@ -2,6 +2,9 @@ extends Node2D
 
 onready var new_game_screen = $"."
 onready var sun_gen = SunlightTileGenerator.new()
+onready var main_player = $"PlayerCharacter"
+onready var npc_left = $"NonPlayerCharacterLeft"
+onready var npc_right = $"NonPlayerCharacterRight"
 
 func _ready():
 	print("Entering new game")
@@ -14,18 +17,26 @@ func _input(event):
 			sun_gen.free()
 			sun_gen = SunlightTileGenerator.new()
 			new_game_screen.add_child(sun_gen)
-			print(get_sun_gen_coords(), sun_gen.get_child(1).get_global_position())
 			player_collision_info()
+			main_player.make_move()
+			print(main_player.get_turn_count())
+			npc_left.make_move()
+			print(npc_left.get_turn_count())
+			npc_right.make_move()
+			print(npc_right.get_turn_count())
 		else:
 			print("was null")
 
 func player_collision_info():
 	print($"PlayerCharacter/Player".get_rect())
-	print($"PlayerCharacter/Player".get_rect().position * 0.25)
+	print($"PlayerCharacter/Player".get_rect().position * $"PlayerCharacter/Player".get_scale())
 	print($"PlayerCharacter/Player".get_texture().get_size())
 	print($"PlayerCharacter/PlayerCollisionBox".get_shape().get_extents().round())
 	print($"PlayerCharacter".get_position())
-#	print($"PlayerCharacter".get_position().distance_to())
+	get_sun_gen_coords()
 
 func get_sun_gen_coords():
-	return sun_gen.get_parent()
+	var sun_collision_box = sun_gen.get_child(1).get_global_position()
+	print(sun_gen.get_child(1).get_shape().get_extents())
+	print($"PlayerCharacter".get_position().distance_to(sun_collision_box))
+	print(rad2deg($"PlayerCharacter".get_position().angle_to(sun_collision_box)))
