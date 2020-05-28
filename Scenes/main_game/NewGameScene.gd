@@ -3,6 +3,7 @@ extends Node2D
 onready var new_game_screen = $"."
 onready var sun_gen = SunlightTileGenerator.new()
 onready var main_player = $"PlayerCharacter"
+onready var main_player_sprite = $"PlayerCharacter/Player"
 onready var npc_left = $"NonPlayerCharacterLeft"
 onready var npc_right = $"NonPlayerCharacterRight"
 
@@ -19,6 +20,9 @@ func _input(event):
 			new_game_screen.add_child(sun_gen)
 			player_collision_info()
 			main_player.make_move()
+			var main_player_sprite_scale = main_player_sprite.get_rect().position * main_player_sprite.get_scale()
+			var new_branch = main_player.put_branch_on_tree(main_player.get_position(), main_player_sprite_scale)
+			main_player.add_child(new_branch)
 			print(main_player.get_turn_count())
 			npc_left.make_move()
 			print(npc_left.get_turn_count())
@@ -37,6 +41,7 @@ func player_collision_info():
 
 func get_sun_gen_coords():
 	var sun_collision_box = sun_gen.get_child(1).get_global_position()
+	print(sun_collision_box)
 	print(sun_gen.get_child(1).get_shape().get_extents())
 	print($"PlayerCharacter".get_position().distance_to(sun_collision_box))
 	print(rad2deg($"PlayerCharacter".get_position().angle_to(sun_collision_box)))
