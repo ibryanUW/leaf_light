@@ -21,5 +21,8 @@ func _input(event):
 			new_game_screen.add_child(sun_gen)
 
 func player_collision_info():
-	var player = $"PlayerCharacter"
-	player.get_collision_position()
+	print($"PlayerCharacter/Player".get_rect())
+	print($"PlayerCharacter/Player".get_rect().position * 0.25)
+	print($"PlayerCharacter/Player".get_texture().get_size())
+	print($"PlayerCharacter/PlayerCollisionBox".get_shape().get_extents().round())
+	print($"PlayerCharacter".get_position())
