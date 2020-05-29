@@ -353,11 +353,18 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
 text = "Hello!
  Welcome to Leaf & Light.
-To begin, start by clicking a sun beam to grow towards.
-
-Click in this area to close info box."
+To begin, start by clicking a sun beam to grow towards. As you grow, your energy will go down, so be sure to spend it wisely."
 align = 1
 valign = 1
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="CloseInfoLabel" type="ToolButton" parent="Game_Start_Info_Label"]
+margin_left = 792.0
+margin_top = -40.0
+margin_right = 859.0
+margin_bottom = 5.0
+text = "Close [X]"
+[connection signal="pressed" from="Game_Start_Info_Label/CloseInfoLabel" to="." method="_on_CloseInfoLabel_pressed"]
