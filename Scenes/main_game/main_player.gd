@@ -7,48 +7,49 @@ onready var branch_hit_box = RectangleShape2D.new()
 onready var branch_collision_shape = CollisionShape2D.new()
 
 var turn_count = 0
+var how_far_to_grow = 0
 
-func make_move(current_angle):
-	if(current_angle >= 0):
-		pass
-	
-func make_move_right():
-	print("moving right")
-	this_player.play_turn()
-	set_turn_count()
 
-func make_move_left():
-	this_player.play_turn()
-	set_turn_count()
-	print("moving left")
+#func make_move_right(point_to_grow_to):
+#	print("moving right")
+#	this_player.play_turn()
+#
+##	put_branch_on_tree()
+#
+#func make_move_left(point_to_grow_to):
+#	print("moving left")
+#	this_player.play_turn()
 
-func make_move_up():
-	this_player.play_turn()
-	set_turn_count()
-	print("moving up")
+#	put_branch_on_tree()
 
-func put_branch_on_tree(parent_obj_origin):
+func set_growth_distance(grow_dist):
+	how_far_to_grow = sqrt(grow_dist)
+	print("how far to grow ", how_far_to_grow)
+	return how_far_to_grow
+
+func put_branch_on_tree(angle, target_pos, origin_point, parent_obj):
 	branch.set_texture(branch_sprite_texture)
-	
 	var btm_left_x = branch.texture.get_width()
 	var btm_left_y = branch.texture.get_height()
-	print("btm_x ", btm_left_x, " btm_y ", btm_left_y)
-	var top_right_x = parent_obj_origin.x + btm_left_x
-	var top_right_y = parent_obj_origin.y - btm_left_y
+	var texture_area = btm_left_x * btm_left_y
+	var sprite_spread = round(how_far_to_grow / btm_left_y)
+	print(sprite_spread)
 	
-	print("x ", top_right_x, " y ", top_right_y)
-	
-	branch.set_global_position(Vector2(top_right_x, top_right_y))
-	branch_hit_box.extents = Vector2(btm_left_x/2, btm_left_y/2)
-	
-	branch_collision_shape.set_shape(branch_hit_box)
-	branch.add_child(branch_collision_shape)
-	
-	print(branch_collision_shape.get_global_position())
-	return branch
+	for _i in sprite_spread:
+		var new_x = origin_point.x + btm_left_x
+		var new_y = origin_point.y - btm_left_y
+		branch.set_global_position(Vector2(new_x, new_y))
+		branch_hit_box.extents = Vector2(btm_left_x/2, btm_left_y/2)
+		
+		branch_collision_shape.set_shape(branch_hit_box)
+		branch.add_child(branch_collision_shape)
+		
+		print(branch_collision_shape.get_global_position())
+#		branch.look_at(target_pos)
+		parent_obj.add_child(branch)
 	
 func get_turn_count():
 	return self.turn_count
 	
-func set_turn_count():
+func set_turn_count(turn_counter):
 	turn_count+=1
