@@ -12,6 +12,7 @@ onready var npc_right = $"NonPlayerCharacterRight"
 
 func _ready():
 	print("Entering new game")
+	new_game_screen.add_child(sun_gen)
 	
 # Takes in an *event* parameter that is a global variable in GDScript
 # and is defined by the parameter provided to the `is_action_pressed()` function.
@@ -19,18 +20,18 @@ func _ready():
 # calls to the NPC's for their moves to be made. 
 func _input(event):
 	if(event.is_action_pressed('click')):
-		# Get distance and angle information
-		var sun_collision_box = sun_gen.get_child(1).get_global_position()
-		var angle_to_sun_spot = main_player.get_position().angle_to(sun_collision_box)
-		print(angle_to_sun_spot)
 		if(sun_gen != null):
 			# Release current sunbeam object from memory and
 			# create a new one which gets new property data.
 			sun_gen.free()
 			sun_gen = SunlightTileGenerator.new()
 			new_game_screen.add_child(sun_gen)
-
-
+			
+			# Get distance and angle information
+			var sun = sun_gen.get_child(0).get_global_position()
+			var angle_to_sun_spot = abs(rad2deg(main_player.get_position().angle_to_point(sun)))
+			print(angle_to_sun_spot-90)
+			print(sun)
 
 func player_collision_info():
 	print("rectangle coords of player sprite ", $"PlayerCharacter/Player".get_rect())
@@ -38,9 +39,9 @@ func player_collision_info():
 	print($"PlayerCharacter/Player".get_texture().get_size())
 	print($"PlayerCharacter/PlayerCollisionBox".get_shape().get_extents().round())
 	print($"PlayerCharacter".get_position())
-	get_sun_gen_coords()
+#	get_sun_gen_coords()
 
-func get_sun_gen_coords():
+#func get_sun_gen_coords():
 #	var sun_collision_box = sun_gen.get_child(1).get_global_position()
 #	print(sun_collision_box)
 #	print(sun_gen.get_child(1).get_shape().get_extents())
@@ -51,7 +52,7 @@ func get_sun_gen_coords():
 # to remove the label from the screen.
 func _on_CloseInfoLabel_pressed():
 	remove_info_text()
-	
+
 # Checks if the label is on the screen and removes it from
 # memory.
 func remove_info_text():

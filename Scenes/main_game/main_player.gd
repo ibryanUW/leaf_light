@@ -8,6 +8,10 @@ onready var branch_collision_shape = CollisionShape2D.new()
 
 var turn_count = 0
 
+func make_move(current_angle):
+	if(current_angle >= 0):
+		pass
+	
 func make_move_right():
 	print("moving right")
 	this_player.play_turn()
